@@ -10,7 +10,7 @@ import Header from './components/Header/Header';
 import LoginPage from './components/LoginPage/LoginPage';
 import RegisterPage from './components/RegisterPage/RegisterPage';
 import UserPage from './components/UserPage/UserPage';
-import InfoPage from './components/InfoPage/InfoPage';
+
 
 import './styles/main.css';
 
@@ -32,10 +32,30 @@ const App = () => (
           path="/user"
           component={UserPage}
         />
-        <Route
-          path="/info"
-          component={InfoPage}
+        {/* <Route
+          path="/registration"
+          component={RegView}
         />
+        <Route
+          path="/success"
+          component={SuccessView}
+        />
+        <Route
+          path="/attendance"
+          component={AttendanceView}
+        />
+        <Route
+          path="/checkin"
+          component={AttendanceTable}
+        />
+        <Route
+          path="/session"
+          component={CreateSessionView}
+        />
+        <Route
+          path="/classnames"
+          component={sessionForm}
+        /> */}
         {/* OTHERWISE (no path!) */}
         <Route render={() => <h1>404</h1>} />
 
