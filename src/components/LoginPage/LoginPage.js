@@ -26,10 +26,10 @@ class LoginPage extends Component {
   }
 
   componentDidUpdate() {
-    if (!this.props.user.isLoading && this.props.user.userName !== null && this.props.user.admin === true) {
-      this.props.history.push('attendance');
-    }
-    if (!this.props.user.isLoading && this.props.user.userName !== null && this.props.user.admin === false) {
+    // if (!this.props.user.isLoading && this.props.user.userName !== null && this.props.user.admin === true) {
+    //   this.props.history.push('attendance');
+    // }
+    if (!this.props.user.isLoading && this.props.user.userName !== null) {
       this.props.history.push('registration');
     }
   }

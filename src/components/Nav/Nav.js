@@ -26,29 +26,16 @@ class Nav extends Component {
 
   render() {
     let content = null;
-    if (this.props.user && this.props.user.admin === false) {
-      content = (
-        <div className="navbar">
-          <Grid>
-            <ul>
-              {/* will need this to build out profile portion of app */}
-              {/* <li className="nav">
-        <link to="registration">
-        Registration
-        </Link>
-        </li> */}
-              <li>
-                <Button id="logOutBtn" onClick={this.logout}>Log Out</Button>
-              </li>
-            </ul>
-          </Grid>
-        </div>
-      )
-    } else if (this.props.user && this.props.user.admin === true) {
-      content = (
-        <div className="navbar">
-        <Grid >
+    content = (
+      <div className="navbar">
+        <Grid>
           <ul>
+            {/* will need this to build out profile portion of app */}
+            <li className="nav">
+              <Link to="registration">
+                Registration
+            </Link>
+            </li>
             <li className="nav">
               <Link to="/attendance">
                 Attendance
@@ -65,12 +52,11 @@ class Nav extends Component {
           </ul>
         </Grid>
       </div>
-      )
-    }
+    )
     return (
       <div>
         {content}
-      </div>
+      </div >
     )
   }
 }
