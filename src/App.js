@@ -10,7 +10,9 @@ import Header from './components/Header/Header';
 import LoginPage from './components/LoginPage/LoginPage';
 import RegisterPage from './components/RegisterPage/RegisterPage';
 import UserPage from './components/UserPage/UserPage';
-
+import AttendanceView from './components/Admin/AttendanceView/AttendanceView';
+import CreateSessionView from './components/Admin/CreateSessionView/CreateSessionView';
+import RegView from './components/Student/RegView/RegView';
 
 import './styles/main.css';
 
@@ -32,27 +34,27 @@ const App = () => (
           path="/user"
           component={UserPage}
         />
-        {/* <Route
+        <Route
           path="/registration"
           component={RegView}
         />
-        <Route
+        {/* <Route
           path="/success"
           component={SuccessView}
-        />
+        /> */}
         <Route
           path="/attendance"
           component={AttendanceView}
         />
-        <Route
+        {/* <Route
           path="/checkin"
           component={AttendanceTable}
-        />
+        /> */}
         <Route
           path="/session"
           component={CreateSessionView}
         />
-        <Route
+        {/* <Route
           path="/classnames"
           component={sessionForm}
         /> */}
